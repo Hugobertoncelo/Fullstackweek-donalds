@@ -62,7 +62,7 @@ model Order {
   restaurantId      String
   orderProducts     OrderProduct[]
   createdAt         DateTime          @default(now())
-  updateAt          DateTime          @updatedAt
+  updatedAt          DateTime          @updatedAt
 }
 
 model OrderProduct {
@@ -74,7 +74,7 @@ model OrderProduct {
   quantity  Int
   price     Float
   createdAt DateTime @default(now())
-  updateAt  DateTime @updatedAt
+  updatedAt  DateTime @updatedAt
 }
 
 enum OrderStatus {
@@ -85,5 +85,5 @@ enum OrderStatus {
 
 enum ConsumptionMethod {
   TAKEAWAY
-  DIKE_IN
+  DINE_IN
 }
