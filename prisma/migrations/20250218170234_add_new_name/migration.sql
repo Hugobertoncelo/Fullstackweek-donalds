@@ -28,5 +28,5 @@ ALTER TABLE "OrderProduct" DROP COLUMN "updatedAt",
 ADD COLUMN     "updatedAt" TIMESTAMP(3) NOT NULL;
 
 -- AlterTable
-ALTER TABLE "Product" DROP COLUMN "ImageUrl",
+ALTER TABLE "Product" DROP COLUMN "imageUrl",
 ADD COLUMN     "imageUrl" TEXT NOT NULL;
